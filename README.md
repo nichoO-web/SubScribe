@@ -1,7 +1,7 @@
 ![alt text](https://i.postimg.cc/7Y5X8zHk/Screenshot-2024-11-02-at-2-23-15-AM.png)
 # SubScribe
 
-SubScribe is an application designed to help users keep track of their subscriptions by logging them in the app along with it's essential information such as the monthly payment, billing cycle, renewal date, and subscription type.
+SubScribe is an application designed to help users keep track of their subscriptions by logging them in the app along with their essential information such as the monthly payment, billing cycle, renewal date, and subscription type.
 
 # Getting Started:
 
@@ -16,12 +16,12 @@ Click [here](https://subscribe-f6554e16bd64.herokuapp.com/) to check out the app
 
 * JavaScript
 * CSS
-* ejs
+* EJS
 * Node.js
 * MongoDB Atlas
-* json
+* JSON
 
 # Next Steps:
 
 * Link subscription websites
-* Display total cost of all subscriptions per billing cycle
+* Display the total cost of all subscriptions per billing cycle
