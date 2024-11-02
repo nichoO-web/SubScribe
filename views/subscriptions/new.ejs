@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="/stylesheets/responsive.css" />
+    <title>Add a new subscription</title>
+</head>
+<body class="new-body">
+    <%- include('../partials/_navbar.ejs') %>
+    <div class="new-container">
+        <h1>Add a new subscription</h1>
+        <form action="/users/<%= user._id %>/subscriptions" method="POST">
+            <div class="new-logourl">
+                <label for="logo">Logo URL:</label>
+                <input type="text" name="logo" id="logo">
+            </div>
+
+            <div class="new-name">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name">
+            </div>
+
+            <div class="new-pay">
+                <label for="paymentAmount">Payment Amount:</label>
+                <input type="text" name="paymentAmount" id="paymentAmount">
+            </div>
+
+            <div class="new-bill">
+                <label for="billingCycle">Billing Cycle:</label>
+                <input type="text" name="billingCycle" id="billingCycle">
+            </div>
+
+            <div class="new-renew">
+                <label for="renewalDate">Renewal Date:</label>
+                <input type="text" name="renewalDate" id="renewalDate">
+            </div>
+
+            <div>
+                <label for="type">Type:</label>
+                <select name="type" id="type">
+                    <option value="Content">Content</option>
+                    <option value="Goods">Goods</option>
+                    <option value="Software">Software</option>
+                    <option value="Memberships">Memberships</option>
+                </select>
+            </div>
+
+            <div class="add-button">
+                <button type="submit">Add Subscription</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

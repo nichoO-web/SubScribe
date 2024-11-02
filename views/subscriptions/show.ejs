@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/show.css" />
+    <link rel="stylesheet" href="/stylesheets/responsive.css" />
+    <title><%= subscription.name %></title>
+</head>
+<body class="show-body">
+    <%- include('../partials/_navbar.ejs') %>
+    <div class="show-container">
+        <div class="show-logo">
+            <h1><%= subscription.name %></h1>
+            <img class="show-image" src="<%= subscription.logo %>" alt="subscription logo">
+        </div>
+        <div class="show-details">
+            <p>Payment Amount: <%= subscription.paymentAmount %></p>
+            <p>Billing Cycle: <%= subscription.billingCycle %></p>
+            <p>Renewal Date: <%= subscription.renewalDate %></p>
+            <p>Type: <%= subscription.type %></p>
+            <button class="edit-button">
+                <a class="edit-link" href="/users/<%= user._id %>/subscriptions/<%= subscription._id %>/edit">Edit Subscription</a>
+            </button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+.navbar {
+    display: flex;
+    max-width: 100vw;
+    padding: 5px 20px;
+    justify-content: space-between;
+    align-items: center;
+  }
+     
+  #nav-header {
+    color: white;
+    size: 1em !important;
+    margin: 0;
+    background-color: red;
+    padding: 8px 20px;
+    border-radius: 15px;
+    border: 2px solid white;
+  }
+     
+.nav-links {
+    display: flex;
+}
+
+  .authlink {
+    text-decoration: none;
+    margin: 0 15px;
+    color: white;
+    font-weight: bold;
+  }
+     
+  .authlink:hover {
+    color: gray;
+  }
+  

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="/stylesheets/responsive.css" />
+    <title>Edit <%= subscription.name %></title>
+</head>
+<body class="edit-body">
+    <%- include('../partials/_navbar.ejs') %>
+    <div class="edit-container">
+        <h1>Edit <%= subscription.name %></h1>
+        <form action="/users/<%= user._id %>/subscriptions/<%= subscription._id %>?_method=PUT" method="POST">
+            <div class="edit-logourl">
+                <label for="logo">Logo URL:</label>
+                <input type="text" name="logo" id="logo" value="<%= subscription.logo %>">
+            </div>
+    
+            <div class="edit-name">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" value="<%= subscription.name %>">
+            </div>
+    
+            <div class="edit-pay">
+                <label for="paymentAmount">Payment Amount:</label>
+                <input type="text" name="paymentAmount" id="paymentAmount" value="<%= subscription.paymentAmount %>">
+            </div>
+    
+            <div class="edit-bill">
+                <label for="billingCycle">Billing Cycle:</label>
+                <input type="text" name="billingCycle" id="billingCycle" value="<%= subscription.billingCycle %>">
+            </div>
+    
+            <div class="edit-renew">
+                <label for="renewalDate">Renewal Date:</label>
+                <input type="text" name="renewalDate" id="renewalDate" value="<%= subscription.renewalDate %>">
+            </div>
+
+            <div>
+                <label for="type">Type:</label>
+                <select name="type" id="type">
+                    <option value="Content" <%= subscription.type === "Content" ? "selected" : '' %>>Content</option>
+                    <option value="Goods" <%= subscription.type === "Goods" ? "selected" : '' %>>Goods</option>
+                    <option value="Software" <%= subscription.type === "Software" ? "selected" : '' %>>Software</option>
+                    <option value="Memberships" <%= subscription.type === "Memberships" ? "selected" : '' %>>Memberships</option>
+                </select>
+            </div>
+
+            <div class="update-button">
+                <button type="submit">Update Subscription</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

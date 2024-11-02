@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+  }
+  
+.index-body {
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100vw;
+    color: white;
+}
+     
+.main-header {
+    font-weight: bold;
+    color: white;
+    font-size: 5.6em;
+    padding: 8px 20px;
+    border-radius: 25px;
+    text-align: center;
+    background-color: red;
+}
+     
+.subheader {
+    margin: 0 20px 0 20px;
+    font-size: 1.4em;
+}
+     
+.index-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-bottom: 100px;
+}
+
+.index-auth {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 250px;
+}
+     
+.signup-link,
+.signin-link {
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 8px 0;
+    border-radius: 15px;
+    width: 10em;
+    text-align: center;
+    margin: 10px;
+}
+     
+.signup-link,
+.signin-link {
+    background-color: red;
+    color: white;
+}
+     
+.signup-link:hover,
+.signin-link:hover {
+    background-color: #ff5378;
+}
+
+.signin-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.signup-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.signin-container,
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+   
+h1 {
+  color: white;
+  background-color: red;
+  padding: 8px 20px;
+  border-radius: 15px;
+  border: 2px solid white;
+}
+   
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 20em;
+  height: 50%;
+  background-color: white;
+  padding: 30px 40px 20px 40px;
+  border-radius: 20px;
+  color: black;
+  font-weight: bold;
+  border: 1px solid white;
+}
+   
+input {
+  border: 2px solid black;
+  padding: 8px;
+  border-radius: 10px;
+}
+   
+button {
+  padding: 10px;
+  background-color: red;
+  color: white;
+  border-radius: 15px;
+  border: none;
+  margin: 15px 0;
+  font-size: 1.1em;
+}
+
+button:hover {
+    background-color: #ff5378;
+}
+
+.mysubscriptions-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.mysubscriptions-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.mysubscriptions-main-header {
+    width: fit-content;
+}
+
+.subscription-image {
+    border: 2px solid white;
+    border-radius: 15px;
+}
+
+.addsubscription-button {
+    margin-right: 50px;
+}
+
+.addsubscription-button:hover {
+    background-color: rgb(224, 125, 125);
+}
+
+.addsubscription-link {
+    color: white;
+    padding: 0 70px;
+}
+
+.subscriptions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.subscription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.subscription-name {
+    color: white;
+}
+
+.subscription-name:hover {
+    color: gray;
+}
+
+.subscription-price {
+    color: white;
+    font-size: large;
+    padding: 0 40px;
+}
+
+.subscription-delete {
+    background-color: black;
+    border: none;
+}
+
+.edit-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.update-button {
+    display: flex;
+    flex-direction: column;
+}
+
+.new-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.new-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.add-button {
+    display: flex;
+    flex-direction: column;
+}

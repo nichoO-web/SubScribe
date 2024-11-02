@@ -1,0 +1,107 @@
+@media screen and (max-width: 799px) {
+    .index-body {
+        font-size: 0.7em;
+    }
+
+    .signup-body {
+        font-size: 0.7em;
+    }
+
+    .signin-body {
+        font-size: 0.7em;
+    }
+
+    .mysubscriptions-body {
+        font-size: 0.8em;
+    }
+   
+    .mysubscriptions-header {
+        flex-direction: column;
+    }
+
+    .addsubscription-button {
+        margin-right: 0;
+    }
+
+    .subscriptions {
+        flex-direction: column;
+    }
+
+    .index-ul {
+        padding-left: 0;
+    }
+
+    .subscription-price {
+        padding-top: 40px;
+    }
+    
+    .show-body {
+        font-size: 0.75em;
+    }
+
+    .show-container {
+        flex-direction: column;
+    }
+
+    .show-image {
+        max-height: max-content;
+    }
+
+    .edit-body {
+        font-size: 0.7em;
+    }
+
+    .edit-logourl {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .edit-name {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .edit-pay {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .edit-bill {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .edit-renew {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .new-body {
+        font-size: 0.7em;
+    }
+
+    .new-logourl {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .new-name {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .new-pay {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .new-bill {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .new-renew {
+        display: flex;
+        flex-direction: column;
+    }
+}

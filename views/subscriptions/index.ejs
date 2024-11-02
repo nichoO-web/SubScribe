@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="/stylesheets/responsive.css" />
+    <title>My Subscriptions</title>
+</head>
+<body class="mysubscriptions-body">
+    <%- include('../partials/_navbar.ejs') %>
+    <div class="mysubscriptions-container">
+        <div class="mysubscriptions-header">
+            <h1 class="mysubscriptions-main-header">My Subscriptions</h1>
+            <button class="addsubscription-button">
+                <a class="addsubscription-link" href="/users/<%= user._id %>/subscriptions/new">New Subscription</a>
+            </button>
+        </div>
+        <ul class="index-ul">
+            <% subscriptions.forEach((subscription) => { %>
+                <li class="subscriptions">
+                    <div class="subscription">
+                        <img class="subscription-image" src="<%= subscription.logo %>" alt="subscription logo">
+                        <a class="subscription-name" href="/users/<%= user._id %>/subscriptions/<%= subscription._id %>">
+                        <%= subscription.name %>
+                        </a>
+                    </div>
+                    <div class="subscription-price">
+                        - <%= subscription.paymentAmount %>
+                    </div>
+                    <form class="subscription-delete" action="/users/<%= user._id %>/subscriptions/<%= subscription._id %>?_method=DELETE" method="POST">
+                        <button type="submit">Delete Subscription</button>
+                    </form>
+                </li>
+            <% }); %>
+        </ul>
+    </div>
+</body>
+</html>
